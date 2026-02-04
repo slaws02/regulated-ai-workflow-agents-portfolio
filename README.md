@@ -1,6 +1,6 @@
 # Regulated AI Workflow Agents — Portfolio
 
-This repository contains a 3-agent portfolio demonstrating guardrailed AI workflow design for regulated environments (healthcare / insurance operations).
+This repository contains a 4-agent portfolio demonstrating guardrailed AI workflow design for regulated environments (healthcare / insurance operations).
 
 ## Agent Suite
 
@@ -12,6 +12,9 @@ Regulatory retrieval agent using public Texas mandate knowledge with scope guard
 
 ### Agent 3 — AI Workflow Output Auditor
 QA oversight agent that audits AI outputs for hallucination risk, format compliance, confidence alignment, and escalation appropriateness, producing safer rewrites.
+
+### Agent 4 — Health Plan Implementation Process Navigator
+Workflow agent that generates structured implementation and configuration procedures for new health plan setup, including dependencies, validation checks, and QA test scenarios.
 
 ## What this demonstrates
 - Knowledge grounding + citation behavior
