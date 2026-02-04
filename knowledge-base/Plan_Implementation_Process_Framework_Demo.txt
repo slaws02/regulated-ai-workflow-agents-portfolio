@@ -1,0 +1,196 @@
+HEALTH PLAN IMPLEMENTATION PROCESS FRAMEWORK — DEMO (PORTFOLIO SAFE)
+
+Purpose:
+This standardized framework describes common phases, procedures, dependencies, and validation checks used when implementing or configuring a new commercial health insurance plan. This is a synthetic portfolio-safe model and not tied to any specific insurer platform.
+
+------------------------------------------------------------
+
+PHASE 1 — PLAN INTAKE & REQUIREMENTS VALIDATION
+
+Objectives:
+Confirm complete and internally consistent plan design before configuration begins.
+
+Core Steps:
+- Receive plan design and benefit schedule
+- Confirm plan type (HMO / PPO / EPO / HDHP)
+- Confirm funding type (Fully Insured / ASO / Level Funded)
+- Validate effective date and benefit year
+- Confirm eligibility rules
+- Confirm dependent rules
+- Confirm network selection
+- Validate rider benefits and special coverages
+
+Dependencies:
+- Final sold plan document
+- Underwriting approval
+- Network selection confirmation
+
+Common Failure Risks:
+- Missing riders
+- Conflicting eligibility rules
+- Network mismatch
+
+------------------------------------------------------------
+
+PHASE 2 — BENEFIT CONFIGURATION
+
+Objectives:
+Configure cost share and service-level benefits.
+
+Core Steps:
+- Configure deductibles
+- Configure out-of-pocket maximums
+- Configure coinsurance
+- Configure copays
+- Map preventive services at 100%
+- Configure specialist differentials
+- Configure emergency rules
+
+Validation Checks:
+- Deductible matches plan document
+- OOP max matches filing
+- Preventive overrides applied
+
+Common Failure Risks:
+- Copay/coinsurance inversion
+- Preventive not overridden
+
+------------------------------------------------------------
+
+PHASE 3 — AUTHORIZATION & UTILIZATION RULES
+
+Objectives:
+Configure utilization management controls.
+
+Core Steps:
+- Configure prior authorization list
+- Map CPT/HCPCS codes requiring review
+- Configure inpatient rules
+- Configure advanced imaging rules
+- Configure specialty drug review triggers
+
+Dependencies:
+- Medical policy list
+- UM policy approval
+
+Common Failure Risks:
+- Over-restrictive rules
+- Missing exception pathways
+
+------------------------------------------------------------
+
+PHASE 4 — ACCUMULATORS & MAXIMUM LOGIC
+
+Objectives:
+Implement financial tracking logic.
+
+Core Steps:
+- Create deductible accumulator
+- Create OOP accumulator
+- Configure embedded vs aggregate family logic
+- Map cross-benefit accumulators
+- Link pharmacy accumulators if integrated
+
+Validation Checks:
+- Family logic correct
+- Pharmacy linkage verified
+
+Common Failure Risks:
+- Embedded/aggregate reversed
+- Pharmacy OOP not linked
+
+------------------------------------------------------------
+
+PHASE 5 — NETWORK & PROVIDER MAPPING
+
+Objectives:
+Ensure correct provider reimbursement tiering.
+
+Core Steps:
+- Assign network IDs
+- Map provider participation tables
+- Configure in-network vs out-of-network benefits
+- Configure wrap networks if used
+
+Validation Checks:
+- Network IDs match claims system
+- OON differential correct
+
+Common Failure Risks:
+- Wrong network assignment
+- OON benefit misapplied
+
+------------------------------------------------------------
+
+PHASE 6 — ENROLLMENT & EDI SETUP
+
+Objectives:
+Enable accurate eligibility intake.
+
+Core Steps:
+- Configure group structure
+- Configure class codes
+- Map coverage tiers
+- Map 834 EDI fields
+- Test eligibility load
+
+Dependencies:
+- Employer census
+- EDI layout spec
+
+Common Failure Risks:
+- Relationship codes wrong
+- Tier mapping mismatch
+
+------------------------------------------------------------
+
+PHASE 7 — CLAIMS ADJUDICATION TESTING
+
+Objectives:
+Validate benefit and financial logic.
+
+Core Steps:
+- Run preventive claim test
+- Run specialist claim test
+- Run inpatient claim test
+- Run OON claim test
+- Run pharmacy claim test
+
+Pass Criteria:
+- Cost share matches plan
+- Accumulators update correctly
+- Authorization rules apply correctly
+
+------------------------------------------------------------
+
+PHASE 8 — ID CARD & DOCUMENT RULES
+
+Objectives:
+Configure member-facing artifacts.
+
+Core Steps:
+- Configure ID card template
+- Configure copay displays
+- Load pharmacy BIN/PCN
+- Validate plan name display
+
+------------------------------------------------------------
+
+PHASE 9 — COMPLIANCE & FINAL QA
+
+Objectives:
+Ensure regulatory and filing alignment.
+
+Core Steps:
+- Validate mandate riders
+- Validate preventive coverage rules
+- Validate appeal language
+- Validate SBC summary alignment
+
+Common Failure Risks:
+- Missing rider language
+- SBC mismatch
+
+------------------------------------------------------------
+
+END OF FRAMEWORK
