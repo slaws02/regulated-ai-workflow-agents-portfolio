@@ -1,0 +1,34 @@
+SECTION E1 — Specialist Referrals
+HMO plans require primary care referral for specialist visits.
+PPO and EPO plans do not require referrals.
+
+SECTION E2 — Prior Authorization
+Prior authorization is required for:
+- MRI and CT imaging
+- Inpatient admissions
+- Specialty medications
+- Outpatient surgery
+
+SECTION E3 — Preventive Care
+In-network preventive services are covered at 100%.
+Examples include screening colonoscopy and annual wellness exam.
+
+SECTION E4 — Deductible vs Out-of-Pocket Maximum
+Deductible is the amount paid before plan cost sharing begins.
+Out-of-pocket maximum is the yearly cap on member cost sharing.
+
+SECTION E5 — Out-of-Network Care
+Out-of-network services are covered at reduced benefit levels.
+Balance billing may apply.
+
+SECTION E6 — Pharmacy Tiers
+Tier 1: Generics — lowest cost share
+Tier 2: Preferred brands
+Tier 3: Non-preferred brands
+Tier 4: Specialty drugs — subject to prior authorization
+
+SECTION E7 — Telehealth
+Telehealth visits are covered at the same level as primary care visits when in-network.
+
+SECTION E8 — Appeals
+Members may appeal denied claims within 180 days.
