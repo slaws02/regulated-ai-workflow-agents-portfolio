@@ -1,0 +1,103 @@
+# Agent 5 — Self-Insured Paperwork Navigator (Demo)
+
+## Purpose
+
+The Self-Insured Paperwork Navigator is a workflow agent designed to help healthcare insurance and TPA implementation teams identify required paperwork, signatory roles, document dependencies, and sequencing for self-insured (ASO) client implementations.
+
+This agent demonstrates how AI can reduce paperwork complexity and implementation delays by translating scenario inputs into structured document requirement checklists with guardrails and missing-information detection.
+
+This is a portfolio-safe demo using a synthetic paperwork framework — not tied to any specific carrier or proprietary form set.
+
+---
+
+## Business Problem
+
+Self-insured (ASO) implementations require multiple document categories across:
+
+- Administrative services agreements
+- Stop-loss policies and attestations
+- Claims funding and banking authorizations
+- Privacy and data sharing agreements
+- EDI and eligibility authorizations
+- Network and PBM addenda
+- Vendor and third-party delegations
+
+Requirements vary based on funding model, stop-loss structure, banking method, vendor carve-outs, and EDI approach. Missing or mis-sequenced documents commonly delay implementations.
+
+Teams need structured, scenario-driven paperwork guidance — not static checklists.
+
+---
+
+## Solution Approach
+
+This agent uses a structured self-insured paperwork framework knowledge base and produces:
+
+- Required vs conditional document lists
+- Signer role mapping
+- Document timing guidance
+- Dependency sequencing
+- Missing input detection
+- Risk and delay flags
+- Next-step recommendations
+- Guardrail refusal for proprietary carrier forms
+
+The agent is knowledge-grounded and will not invent carrier-specific paperwork.
+
+---
+
+## Key Behaviors
+
+- Distinguishes REQUIRED vs CONDITIONAL documents
+- Maps documents to signer roles
+- Identifies document dependencies
+- Flags sequencing constraints
+- Detects missing scenario inputs
+- Asks clarifying questions when needed
+- Refuses proprietary or out-of-scope requests
+- Produces structured implementation checklists
+- Uses compliance-safe language
+
+---
+
+## Output Schema
+
+REQUEST / SCENARIO  
+ASSUMPTIONS  
+MISSING INFO NEEDED  
+REQUIRED DOCUMENTS  
+CONDITIONAL DOCUMENTS  
+SIGNERS BY ROLE  
+SEQUENCE / DEPENDENCIES  
+RISKS / COMMON DELAYS  
+NEXT BEST ACTIONS  
+ESCALATE / SME NEEDED  
+
+---
+
+## Example Use Cases
+
+- Self-insured ASO group paperwork identification
+- Stop-loss documentation requirements
+- Claims funding and ACH authorization mapping
+- EDI and eligibility authorization requirements
+- Carve-out PBM and vendor addendum detection
+- Implementation paperwork sequencing check
+
+---
+
+## Skills Demonstrated
+
+- Document dependency modeling
+- Conditional workflow logic
+- Role-based signatory mapping
+- Implementation paperwork automation
+- Guardrailed AI design
+- Missing-information detection
+- Compliance-aware AI prompting
+- Operational workflow agents
+
+---
+
+## Data Safety Note
+
+This demo agent uses a synthetic self-insured paperwork framework created solely for portfolio demonstration. No proprietary carrier forms, internal insurer processes, or confidential documents are included or referenced.
