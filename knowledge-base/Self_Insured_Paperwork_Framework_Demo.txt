@@ -1,0 +1,135 @@
+SELF-INSURED (ASO) PAPERWORK FRAMEWORK — DEMO (PORTFOLIO SAFE)
+
+Purpose:
+This is a synthetic document matrix for a self-insured employer implementation. It identifies commonly required document types, signers, dependencies, and timing. Not tied to any specific carrier or insurer.
+
+============================================================
+INPUTS THE AGENT SHOULD CONFIRM (IF MISSING)
+- Effective date
+- Employer size / market segment
+- Funding model: ASO self-insured (Yes/No)
+- Stop-loss included: Specific, Aggregate (Yes/No)
+- Stop-loss carrier: Same as admin carrier or separate
+- Banking model: carrier-held, employer-held, or third-party
+- EDI method: 834/portal/manual
+- Network: leased network or custom
+- Pharmacy model: carved-in or carved-out
+- Delegated entities: TPA, PBM, stop-loss vendor, broker
+
+============================================================
+DOCUMENT CATEGORIES & REQUIREMENTS
+
+A) ADMINISTRATION / ASO DOCUMENTS
+1) ASO Services Agreement
+- Required for: all ASO self-insured groups
+- Signers: Employer Authorized Officer + Admin Carrier/TPA
+- Timing: before implementation build begins
+- Dependencies: finalized plan design and fees
+
+2) Administrative Services Schedule / Fee Exhibit
+- Required for: all ASO groups
+- Signers: Employer + Admin Carrier/TPA
+- Timing: with ASO agreement
+- Dependencies: fee approval
+
+3) Implementation/Project Authorization (Work Order)
+- Required for: all ASO groups
+- Signers: Employer + Admin Carrier/TPA
+- Timing: kickoff
+- Dependencies: scope confirmation
+
+B) STOP-LOSS DOCUMENTS
+4) Stop-Loss Policy Application
+- Required for: if stop-loss purchased
+- Signers: Employer Authorized Officer
+- Timing: prior to policy issuance
+- Dependencies: underwriting requirements
+
+5) Specific Stop-Loss Policy
+- Required for: if specific stop-loss included
+- Signers: Stop-loss Carrier + Employer
+- Timing: effective date readiness
+- Dependencies: completed application and underwriting approval
+
+6) Aggregate Stop-Loss Policy
+- Required for: if aggregate stop-loss included
+- Signers: Stop-loss Carrier + Employer
+- Timing: effective date readiness
+- Dependencies: completed application and underwriting approval
+
+7) Disclosure / Claims History Attestation
+- Required for: if stop-loss purchased
+- Signers: Employer Authorized Officer
+- Timing: underwriting phase
+- Dependencies: prior claims reporting
+
+C) BANKING / CLAIMS FUNDING DOCUMENTS
+8) Claims Funding Agreement (Funding Arrangement Letter)
+- Required for: all ASO groups with claims funding
+- Signers: Employer + Admin Carrier/TPA
+- Timing: before first claims cycle
+- Dependencies: banking model chosen
+
+9) Bank Account Authorization / ACH Forms
+- Required for: if any ACH draft/credit is used
+- Signers: Employer Banking Authorized Signer
+- Timing: before go-live
+- Dependencies: voided check or bank letter
+
+10) Third-Party Payment Authorization (if applicable)
+- Required for: if third-party manages funding
+- Signers: Employer Authorized Officer + Third Party
+- Timing: before go-live
+- Dependencies: vendor confirmation
+
+D) PRIVACY / DATA SHARING / PHI DOCUMENTS
+11) Business Associate Agreement (BAA) / HIPAA Addendum
+- Required for: when PHI is handled
+- Signers: Employer + Admin Carrier/TPA (and/or vendors)
+- Timing: before data exchange
+- Dependencies: vendor list and data scope
+
+12) Data Sharing Authorization (Employer ↔ Broker/Vendors)
+- Required for: when broker/vendors need claim reports
+- Signers: Employer Privacy Officer
+- Timing: prior to first reporting
+- Dependencies: reporting scope defined
+
+E) ELIGIBILITY / EDI AUTHORIZATIONS
+13) Eligibility Feed Authorization / Implementation Intake Form
+- Required for: all groups
+- Signers: Employer Implementation Contact
+- Timing: early in implementation
+- Dependencies: eligibility source of truth
+
+14) 834 EDI Trading Partner Agreement (TPA)
+- Required for: if 834 EDI is used
+- Signers: Employer + Admin Carrier/TPA (sometimes vendor)
+- Timing: before testing
+- Dependencies: EDI specs and contacts
+
+F) NETWORK / PBM / VENDOR ADDENDA (CONDITIONAL)
+15) Network Access Addendum (leased network)
+- Required for: if leased network used
+- Signers: Employer + Admin Carrier/TPA
+- Timing: before member materials finalized
+- Dependencies: network selection
+
+16) PBM Services Agreement (if carved out)
+- Required for: if pharmacy carved-out to separate PBM
+- Signers: Employer + PBM
+- Timing: before pharmacy setup
+- Dependencies: PBM selection
+
+============================================================
+OUTPUT RULES FOR THE AGENT
+- Always list REQUIRED vs CONDITIONAL documents
+- Always list signers and timing
+- Always show dependencies
+- If key inputs are missing, ask clarifying questions
+- If scenario is outside file, return NOT FOUND IN PAPERWORK FILE and recommend escalation
+
+============================================================
+END OF DEMO FRAMEWORK
+
+
